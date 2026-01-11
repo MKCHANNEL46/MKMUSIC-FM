@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK Listening Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>MK Listening Room</h1>
+  <p>Muzik senja untuk tenangkan jiwa</p>
+</header>
+
+<section class="card">
+  <h2>🎧 Listening LIVE</h2>
+
+  <audio id="audioPlayer" controls>
+    <source src="audio/track1.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="controls">
+    <button onclick="prevTrack()">⏮</button>
+    <button onclick="nextTrack()">⏭</button>
+  </div>
+
+  <small>Tekan ▶️ untuk mula mendengar</small>
+</section>
+
+<section class="card">
+  <h2>🎶 Lagu Popular</h2>
+
+  <iframe
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+
+</section>
+
+<footer>
+  <p>
+    Muzik original dimainkan melalui player sendiri.<br>
+    Lagu popular melalui platform rasmi pemilik hak cipta.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
