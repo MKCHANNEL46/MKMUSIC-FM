@@ -1,0 +1,20 @@
+const tracks = [
+  "audio/track1.mp3",
+  "audio/track2.mp3"
+];
+
+let currentTrack = 0;
+const player = document.getElementById("audioPlayer");
+
+function nextTrack() {
+  currentTrack = (currentTrack + 1) % tracks.length;
+  player.src = tracks[currentTrack];
+  player.play();
+}
+
+function prevTrack() {
+  currentTrack =
+    (currentTrack - 1 + tracks.length) % tracks.length;
+  player.src = tracks[currentTrack];
+  player.play();
+}
